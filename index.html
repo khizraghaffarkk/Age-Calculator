@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+</head>
+<body style="background-color: gray;">
+    <div class="container">
+        <div class="flex-class">
+            <div class="input-container">
+                <span>Day</span>
+                <input type="number" id="day" placeholder="DD">
+                <small class="error-day"></small>
+            </div>
+            <div class="input-container">
+                <span>Month</span>
+                <input type="number" id="month" placeholder="MM">
+                <small class="error-month"></small>
+            </div>
+            <div class="input-container">
+                <span>Year</span>
+                <input type="number" id="year" placeholder="YYYY">
+                <small class="error-year"></small>
+            </div>
+        </div>
+            <button class="submit-btn">
+                <img src="icon-arrow.svg" alt="Button icon error">
+            </button>
+            <div class="output">
+                <h1 style="font-style: italic; font-weight: bolder;"><span class="output-year" style="font-weight:bolder;">--</span> Years</h1>
+                <h1 style="font-style: italic; font-weight:bolder"><span class="output-months" style="font-weight:bolder;">--</span> Months</h1>
+                <h1 style="font-style: italic; font-weight: bolder;"><span class="output-days" style="font-weight:bolder;">--</span> Days</h1>
+            </div>
+    </div>   
+
+    <script src="script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> -->
+</body>
+</html>

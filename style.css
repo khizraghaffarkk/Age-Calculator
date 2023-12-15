@@ -1,0 +1,132 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+}
+@font-face {
+    font-family: Pop;
+    src: url("fonts/Poppins-Regular.ttf");
+}
+
+*{
+    font-family: Pop !important;
+}
+body{
+    background-color: var(--Light-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    background-color: var(--White);
+    width: 420px;
+    max-width: 80%;
+    padding: 30px;
+    position: relative;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 20px;
+}
+input{
+    width: 70px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight:bolder;
+    font-size: large;
+    border: 2px solid var(--Off-white);
+    /* border: none; */
+    outline: none;
+}
+input:focus{
+    border: 2px solid var(--Purple);
+}
+small{
+    text-transform: capitalize;
+    color: red;
+    font-weight: bold;
+    font-size: 0.6rem;
+}
+.submit-btn{
+    background-color: var(--Purple);
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    border: none;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 110px;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background-color: black;
+}
+.output span{
+    font-size: 2.75rem;
+    color: var(--Purple);
+    font-style: italic;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+.flex-class{
+    display: flex;
+    border-bottom: 2px solid var(--Off-white);
+    margin-bottom: 20px;
+}
+@media ( max-width: 768px){
+  
+.submit-btn img{
+    transform: scale(0.5);
+}
+input{
+    width: 80%;
+}
+.output span{
+    font-size: 1.76rem;
+}
+.submit-btn{
+    width: 40px;
+    height: 40px;
+    right: 41%;
+    top: 120px;
+    padding: 26px;
+}
+.input-flex{
+    border-bottom: 2px solid var(--Off-white);
+    padding-bottom: 23px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
